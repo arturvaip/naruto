@@ -40,11 +40,10 @@
 
             button {
                 display: inline-block; /* Делает элемент блочным, как кнопку */
-                padding: 2% 4%; 
+                padding: 1% 2%; 
                 color: rgb(0, 0, 0); /* Цвет текста */
                 text-align: center; /* Выравнивание текста по центру */
-                border-radius: 5%; /* Скругление углов */
-                border-radius: 60%;
+                border-radius: 10%;
                 text-decoration: none; /* Убирает подчеркивание у ссылки */
                 font-size: 160%; /* Размер шрифта */
             }
@@ -55,6 +54,20 @@
 
             img {
                 border: 3px solid #000000;
+            }
+
+            @media (max-width: 600px) {
+              body {
+                 font-size: 16px; /* Уменьшаем размер шрифта для мобильных устройств */
+              }
+
+              .container {
+                 padding: 10px; /* Уменьшаем отступы на мобильных устройствах */
+              }
+
+              .button {
+                 width: 100%; /* Кнопка на мобильном устройстве занимает всю ширину */
+              }
             }
         </style>
     </head>
