@@ -9,19 +9,16 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Jost:ital,wght@0,100..900;1,100..900&family=Russo+One&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
         <style>
-            body ,html {
-              height: 100vh;
-              margin: 0;
-              padding: 0;
-              overflow: hidden;
-            }
-
-            body {
-                text-align: center;
-                background-image: url(https://abrakadabra.fun/uploads/posts/2021-12/1639615427_4-abrakadabra-fun-p-naruto-skala-khokage-4.jpg);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
+           html, body {
+               height: 100vh;
+               margin: 0;
+               padding: 0;
+               background-image: url(https://abrakadabra.fun/uploads/posts/2021-12/1639615427_4-abrakadabra-fun-p-naruto-skala-khokage-4.jpg);
+               background-size: cover;
+               background-position: center;
+               background-attachment: fixed;
+               text-align: center;
+               overflow: hidden;
             }
 
             h1 {
@@ -60,6 +57,12 @@
             }
 
             @media (max-width: 600px) {
+              html, body {
+                 height: auto; /* Убираем фиксированную высоту для мобильных устройств */
+                 background-attachment: scroll; /* Убираем фиксированную привязку фона для мобильных */
+                 background-size: auto; /* Автоматический размер фона для мобильных */
+              }
+
               body {
                  font-size: 16px; /* Уменьшаем размер шрифта для мобильных устройств */
               }
