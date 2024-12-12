@@ -53,7 +53,10 @@
             }
 
             img {
-                border: 3px solid #000000;
+
+              max-width: 100%; /* Изображения не выходят за пределы контейнера */
+              height: auto;    /* Сохраняем пропорции */
+              border: 3px solid #000000;
             }
 
             @media (max-width: 600px) {
